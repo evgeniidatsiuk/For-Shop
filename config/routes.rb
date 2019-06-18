@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  get 'deliveries/index'
-  get 'deliveries/show'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'deliveries#index'
+  resources :deliveries, only: %i[index show]
+  resources :repairs,    only: %i[index show]
 end
