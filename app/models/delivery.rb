@@ -1,6 +1,10 @@
 class Delivery < ApplicationRecord
-  validates :number, presence: :true, uniqueness: { case_sensitive: false }
-  validates :where, presence: :true
-  validates :owner, presence: :true
-  validates :price, presence: :true
+  belongs_to :status
+
+  validates :number,    presence: :true, uniqueness: { case_sensitive: false }
+  validates :where,     presence: :true
+  validates :client,    presence: :true
+  validates :price,     presence: :true
+  validates :end,       presence: :true
+  validates :status_id, presence: :true
 end

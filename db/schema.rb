@@ -42,7 +42,9 @@ ActiveRecord::Schema.define(version: 2019_06_18_192301) do
     t.string "where", default: "", null: false
     t.integer "number", default: 0, null: false
     t.string "price", default: "", null: false
-    t.string "owner", default: "", null: false
+    t.string "client", default: "", null: false
+    t.integer "status_id", null: false
+    t.datetime "end", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["number"], name: "index_deliveries_on_number", unique: true
@@ -56,6 +58,7 @@ ActiveRecord::Schema.define(version: 2019_06_18_192301) do
     t.string "worker", default: "", null: false
     t.string "price", default: "", null: false
     t.datetime "end", null: false
+    t.integer "status_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["number"], name: "index_repairs_on_number", unique: true
