@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  where: MyString
+  nubmer: 1
+  price: MyString
+  owner: MyString
+
+two:
+  where: MyString
+  nubmer: 1
+  price: MyString
+  owner: MyString
