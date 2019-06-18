@@ -40,25 +40,25 @@ ActiveRecord::Schema.define(version: 2019_06_18_181740) do
 
   create_table "deliveries", force: :cascade do |t|
     t.string "where", default: "", null: false
-    t.integer "nubmer", default: 0, null: false
+    t.integer "number", default: 0, null: false
     t.string "price", default: "", null: false
     t.string "owner", default: "", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["nubmer"], name: "index_deliveries_on_nubmer", unique: true
+    t.index ["number"], name: "index_deliveries_on_number", unique: true
   end
 
   create_table "repairs", force: :cascade do |t|
     t.string "where", default: "", null: false
     t.string "name", default: "", null: false
     t.string "client", default: "", null: false
-    t.string "number", default: "", null: false
+    t.integer "number", default: 0, null: false
     t.string "worker", default: "", null: false
     t.string "price", default: "", null: false
     t.datetime "end", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index [nil], name: "index_repairs_on_nubmer", unique: true
+    t.index ["number"], name: "index_repairs_on_number", unique: true
   end
 
 end
