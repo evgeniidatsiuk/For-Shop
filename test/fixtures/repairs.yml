@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  client: MyString
+  number: MyString
+  worker: MyString
+  price: MyString
+  end: 2019-06-18 21:17:40
+
+two:
+  name: MyString
+  client: MyString
+  number: MyString
+  worker: MyString
+  price: MyString
+  end: 2019-06-18 21:17:40
